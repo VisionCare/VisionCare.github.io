@@ -1983,7 +1983,7 @@ a {
 }
 
 a:hover {
-    color: #ffffff !important;
+    color: #359CD6 !important;
     border-bottom-color: transparent;
 }
 
@@ -4262,7 +4262,7 @@ body.is-touch #banner {
 
     #navPanel .link {
         border: 0;
-        border-top: solid 1px rgba(255, 255, 255, 0.05);
+        border-top: solid 1px rgba(255, 255, 0, 0.5);
         color: rgba(255, 255, 255, 0.75);
         display: block;
         height: 3em;
