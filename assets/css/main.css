@@ -31,7 +31,7 @@
 
 /* Reset */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h2b h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -1950,7 +1950,7 @@ u\24 + *,
 /* Basic */
 
 html, body {
-    background: #fffff9;
+    background: #f9f9f9;
 }
 
 body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1965,7 +1965,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 }
 
 body, input, select, textarea {
-    color: rgba(6, 106, 159, 9); /* decides color of  */
+    color: rgba(0,0,0, 9); 
     font-family: "Roboto", Helvetica, sans-serif;
     font-size: 15pt;
     font-weight: 0;
@@ -1989,7 +1989,7 @@ a:hover {
 
 strong, b {
     color: #034163;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 em, i {
@@ -2000,19 +2000,38 @@ p {
     margin: 0 0 2em 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h4, h5, h6 {
+    color: #000000;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+}
+h2b {
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+}
+
+h2, h3 {
     color: #000000;
     font-weight: 300;
     line-height: 1em;
     margin: 0 0 1em 0;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a, h2 a, h2b a, h3 a, h4 a, h5 a, h6 a {
     color: inherit;
     border: 0;
 }
 
 h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+}
+
+h2b {
     font-size: 2em;
     line-height: 1.5em;
     letter-spacing: -0.025em;
@@ -2506,6 +2525,12 @@ header p {
 }
 
 header h2 + p {
+    font-size: 1.25em;
+    margin-top: -1em;
+    line-height: 1.75em;
+}
+
+header h2b + p {
     font-size: 1.25em;
     margin-top: -1em;
     line-height: 1.75em;
@@ -3420,15 +3445,15 @@ input[type="button"]:disabled,
 }
 
 .spotlight.style1 .content {
-    border-color: #000000;
+    border-color: #066A9F;
 }
 
 .spotlight.style2 .content {
-    border-color: #000000;
+    border-color: #066A9F;
 }
 
 .spotlight.style3 .content {
-    border-color: #000000;
+    border-color: #066A9F;
 }
 
 .spotlight.inactive .content {
@@ -3791,6 +3816,12 @@ body.landing #header {
     margin: 0;
 }
 
+#banner .content header h2b {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+
 #banner .content header p {
     margin: 0.5em 0 0 0;
     top: 0;
@@ -4020,6 +4051,10 @@ body.is-touch #banner {
     h2 {
         font-size: 1.5em;
     }
+    
+    h2b {
+        font-size: 1.5em;
+    }
 
     h3 {
         font-size: 1.2em;
@@ -4037,6 +4072,10 @@ body.is-touch #banner {
     header h2 + p {
         font-size: 1em;
     }
+    header h2b + p {
+        font-size: 1em;
+    }
+
 
     header h3 + p {
         font-size: 1em;
@@ -4100,6 +4139,10 @@ body.is-touch #banner {
     #banner .content header h2 {
         font-size: 1.5em;
     }
+    
+    #banner .content header h2b {
+        font-size: 1.5em;
+    }    
 
     #banner .content .image {
         height: 9em;
