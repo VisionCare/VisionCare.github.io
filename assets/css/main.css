@@ -1768,7 +1768,7 @@ body,
 input,
 select,
 textarea {
-    color: rgba(0, 0, 0, 9);
+    color: rgba(0,0,0,9);
     font-family: "Roboto", Helvetica, sans-serif;
     font-size: 15pt;
     font-weight: 0;
