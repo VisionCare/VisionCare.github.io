@@ -1517,8 +1517,7 @@ body {
 @media screen and (max-width: 480px) {
 
     .row > * {
-        padding: 0 0 0 0.5em
-            ;
+        padding: 0 0 0 0.5em;
     }
 
     .row {
@@ -1631,7 +1630,7 @@ body {
         clear: none;
         margin-left: 3.5em;
         text-align: center;
-        
+
     }
 
     .\37 u\28xsmall\29,
@@ -1768,7 +1767,7 @@ body,
 input,
 select,
 textarea {
-    color: rgba(0,0,0,9);
+    color: rgba(0, 0, 0, 9);
     font-family: "Roboto", Helvetica, sans-serif;
     font-size: 15pt;
     font-weight: 0;
@@ -3590,7 +3589,7 @@ body.landing #header {
 #banner {
     background-attachment: fixed;
     background-color: #272833;
-    background-image: url("../../images/banner2.jpg");
+    background-image: url("../../images/banner5.jpg");
     background-position: center center;
     background-size: cover;
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3619,6 +3618,10 @@ body.landing #header {
 }
 
 #banner:after {
+    background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.1), rgba(23, 24, 32, 0.01)), url("images/overlay.png");
+    background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.1), rgba(23, 22, 32, 0.01)), url("images/overlay.png");
+    background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.1), rgba(23, 24, 32, 0.1)), url("images/overlay.png");
+    background-image: linear-gradient(top, rgba(23, 24, 32, 0.1), rgba(23, 24, 32, 0.1)), url("images/overlay.png");
     content: '';
     display: block;
     height: 100%;
